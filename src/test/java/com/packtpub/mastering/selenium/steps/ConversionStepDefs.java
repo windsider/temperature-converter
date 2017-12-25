@@ -16,7 +16,7 @@ import static org.junit.Assert.fail;
  * Created by ruvzherdev on 12/22/2017.
  */
 public class ConversionStepDefs {
-    @Given("^I want to  convert (\\d+).(\\d+) degree Fahrenheit to Celsius$")
+    @Given("^I want to  convert (\\d+).(\\d+) degree Fahrenheit to Celsius$ _cool")
     public void I_want_to_convert_degree_Fahrenheit_to_Celsius(int arg1, int arg2) throws Throwable {
         // Express the Regexp above with the code you wish you had
         throw new PendingException("PendingError");
