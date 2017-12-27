@@ -19,14 +19,14 @@ public class ConversionStepDefs {
     @Given("^I want to  convert (\\d+).(\\d+) degree Fahrenheit to Celsius$ _cool")
     public void I_want_to_convert_degree_Fahrenheit_to_Celsius(int arg1, int arg2) throws Throwable {
         // Express the Regexp above with the code you wish you had
-        fail("It is failed");
+        fail("It is failed")
         throw new PendingException("PendingError");
     }
 
     @When("^I input the value of Fahrenheit as (\\d+).(\\d+) in text field$")
     public void I_input_the_value_of_Fahrenheit_as_in_text_field(int arg1, int arg2) throws Throwable {
         // Express the Regexp above with the code you wish you had
-       
+
         throw new PendingException("PendingError");
     }
 
