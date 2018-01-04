@@ -10,7 +10,7 @@ public class TemperatureConverterPage {
     public TemperatureConverterPage(WebDriver driver){
         this.driver = driver;
         System.out.println(driver.getTitle());
-        if (!driver.getTitle().equals("from fahrenheit to celsius - Google Search")){
+        if (!driver.getTitle().equals("from fahrenheit to celsius - Поиск в Google")){
             throw new WrongPageException("Incorrect page for Temperature Conversion page");
         }
     }
@@ -21,10 +21,10 @@ public class TemperatureConverterPage {
     }
     public String actualResult(){
         String valueOfCelsius = driver.findElement(By.xpath(".//*[@id='_Cif']/input")).getAttribute("value");
-        System.out.println(valueOfCelsius);
+        System.out.println("valueOfCelsius " + valueOfCelsius);
         return valueOfCelsius;
     }
     public String expectedResult(){
-        return "37";
+        return "36,66667";
     }
 }
