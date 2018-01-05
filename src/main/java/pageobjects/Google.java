@@ -27,7 +27,8 @@ public class Google {
     public TemperatureConverterPage goToTemperatureConversionPage(){
         driver.findElement(By.id("lst-ib")).clear();
         driver.findElement(By.id("lst-ib")).sendKeys("фаренгейт цельсий");
-        driver.findElement(By.name("btnK")).click();
+
+        driver.findElement(By.xpath("//input[@value='Поиск в Google']")).click();
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.presenceOfElementLocated(By.id("resultStats")));
         return new TemperatureConverterPage(driver);

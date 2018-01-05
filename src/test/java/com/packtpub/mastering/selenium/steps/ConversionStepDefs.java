@@ -1,5 +1,6 @@
 package com.packtpub.mastering.selenium.steps;
 
+import org.openqa.selenium.chrome.ChromeDriver;
 import pageobjects.Google;
 import pageobjects.TemperatureConverterPage;
 import cucumber.annotation.After;
@@ -23,7 +24,7 @@ public class ConversionStepDefs {
     public TemperatureConverterPage temperatureConverterPage;
     @Given("^I want to  convert (\\d+).(\\d+) degree Fahrenheit to Celsius$")
     public void I_want_to_convert_degree_Fahrenheit_to_Celsius(int arg1, int arg2) throws Throwable {
-        driver = new FirefoxDriver();
+        driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         googlePage = new Google(driver);
