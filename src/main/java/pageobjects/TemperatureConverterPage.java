@@ -10,7 +10,7 @@ public class TemperatureConverterPage {
     public TemperatureConverterPage(WebDriver driver){
         this.driver = driver;
         System.out.println(driver.getTitle());
-        if (!driver.getTitle().equals("from fahrenheit to celsius - Поиск в Google")){
+        if (!driver.getTitle().equals("фаренгейт цельсий - Поиск в Google")){
             throw new WrongPageException("Incorrect page for Temperature Conversion page");
         }
     }
